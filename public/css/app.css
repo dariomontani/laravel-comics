@@ -87,7 +87,7 @@ header ul li:hover a {
     text-align: center;
 }
 
-button {
+.button-box button {
     background-color: #0c7cec;
     color: white;
     padding: 1em 5em;
@@ -163,4 +163,28 @@ footer .background .container .containerList div ul li a {
 
 footer .background .container .containerList div ul li:hover a {
     color: #0c7cec;
+}
+
+.footer-bottom {
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5em 0;
+}
+
+.footer-bottom .follow {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom .button-footer button {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    border: 2px solid#0c7cec;
+    padding: 1em 2em;
+}
+
+.footer-bottom .follow h4 {
+    color: #0c7cec;
+    margin-right: 1em;
 }
