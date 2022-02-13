@@ -11,6 +11,110 @@ html {
     font-size: 100%;
 }
 
-.container {
+/* header */
+header {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+header img {
+    display: block;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    padding-left: 2em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li:hover a {
+    color: #0c7cec;
+}
+
+/* jumbo */
+.jumbo {
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    height: 450px;
+}
+
+.container-cards {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.box-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.card {
+    width: calc(100% / 7);
+    margin: 0 0.5em;
+}
+
+.card .box-image img {
     width: 100%;
+}
+
+.card p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding-top: 1.5em;
+}
+
+.button-box {
+    background-color: black;
+    padding: 1.5em 0 1em 0;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background-color: #0c7cec;
+    color: white;
+    padding: 1em 5em;
+}
+
+/* footer */
+
+.footer-top {
+    background-color: #0c7cec;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-top div {
+    width: 200px;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.footer-top div img {
+    width: 40%;
+}
+
+.footer-top div p {
+    font-size: 0.8em;
+    padding-left: 1em;
 }

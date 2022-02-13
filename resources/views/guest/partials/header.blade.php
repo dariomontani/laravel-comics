@@ -15,35 +15,6 @@
 </header>
 
 <style lang="scss" scoped>
-    header {
-        padding: 2em 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-    }
-    header img {
-        display: block;
-    }
-
-    header ul{
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-
-    header ul li{
-        padding-left: 2em;
-    }
-
-    header ul li a{
-        text-decoration: none;
-        color: black;
-    }
-
-    header ul li:hover a{
-        color: #0c7cec;
-    }
+    
 
 </style>
