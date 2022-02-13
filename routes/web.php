@@ -270,3 +270,7 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
     return view('guest.shop');
 })->name('shop');
+
+Route::get('/footer', function () {
+    return view('guest.footerList');
+})->name('footerList');

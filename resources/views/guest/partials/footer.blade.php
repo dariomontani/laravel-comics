@@ -21,35 +21,59 @@
     </div>
 </div>
 <footer>
-    <ul>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-    </ul>
-    <ul>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-    </ul>
-    <ul>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-    </ul>
-    <ul>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-        <li>dc comics</li>
-    </ul>
+    <div class="background">
+        <div class="container">
+            <div class="containerList">
+                <div>
+                    <h3>DC COMICS</h3>
+                    <ul>
+                        <li><a href="{{route('footerList')}}">Characters</a></li>
+                        <li><a href="{{route('footerList')}}">Comics</a></li>
+                        <li><a href="{{route('footerList')}}">Movies</a></li>
+                        <li><a href="{{route('footerList')}}">TV</a></li>
+                        <li><a href="{{route('footerList')}}">Games</a></li>
+                        <li><a href="{{route('footerList')}}">Videos</a></li>
+                        <li><a href="{{route('footerList')}}">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>DC</h3>
+                    <ul>
+                        <li><a href="{{route('footerList')}}">Terms Of Use</a></li>
+                        <li><a href="{{route('footerList')}}">Privacy policy (New)</a></li>
+                        <li><a href="{{route('footerList')}}">Ad Choices</a></li>
+                        <li><a href="{{route('footerList')}}">Advertising</a></li>
+                        <li><a href="{{route('footerList')}}">Jobs</a></li>
+                        <li><a href="{{route('footerList')}}">Subscription</a></li>
+                        <li><a href="{{route('footerList')}}">Talkent Workshops</a></li>
+                        <li><a href="{{route('footerList')}}">CPSC Certification</a></li>
+                        <li><a href="{{route('footerList')}}">Rating</a></li>
+                        <li><a href="{{route('footerList')}}">Shop Help</a></li>
+                        <li><a href="{{route('footerList')}}">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SITES</h3>
+                    <ul>
+                        <li><a href="{{route('footerList')}}">DC</a></li>
+                        <li><a href="{{route('footerList')}}">MAD Magazine</a></li>
+                        <li><a href="{{route('footerList')}}">DC Kids</a></li>
+                        <li><a href="{{route('footerList')}}">DC Universe</a></li>
+                        <li><a href="{{route('footerList')}}">DC Power Visa</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="{{route('footerList')}}">Shop DC</a></li>
+                        <li><a href="{{route('footerList')}}">Shop DC Collectibles</a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="{{asset('img/dc-logo-bg.png')}}" alt="">
+        </div>
+    </div>
 </footer>
-<div class="footer-down">
+<div class="footer-bottom">
 
 </div>

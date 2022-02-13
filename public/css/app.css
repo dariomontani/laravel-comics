@@ -118,3 +118,49 @@ button {
     font-size: 0.8em;
     padding-left: 1em;
 }
+
+footer .background {
+    height: 400px;
+    background-image: url(../img/footer-bg.jpg);
+}
+
+footer .background .container {
+    width: 90%;
+    margin: auto;
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .background .container img {
+    width: 300px;
+    height: 300px;
+}
+
+footer .background .container .containerList {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .background .container .containerList div {
+    padding-right: 2em;
+}
+
+footer .background .container .containerList h3 {
+    padding-bottom: 0.5em;
+    color: white;
+}
+
+footer .background .container .containerList ul {
+    list-style: none;
+}
+
+footer .background .container .containerList div ul li a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+footer .background .container .containerList div ul li:hover a {
+    color: #0c7cec;
+}
