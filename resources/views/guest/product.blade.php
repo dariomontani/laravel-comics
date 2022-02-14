@@ -35,14 +35,41 @@
         <div class="bottomMain">
             <div class="leftBottom">
                 <h3>Talent</h3>
-                <p>Art by: </p>
-                <p>Written by: </p>
+                <div class="artBy">
+                    <div class="first">
+                        <p>Art by:</p>
+                    </div>
+                    <div class="second">
+                        @foreach ($product['artists'] as $item)
+                        <p class="lightblue">{{$item}},</p>
+                        @endforeach
+                    </div>
+                </div>
+                <div class="written">
+                    <div class="first">
+                        <p>Written by:</p>
+                    </div>
+                    <div class="second">
+                        @foreach ($product['writers'] as $item)
+                        <p class="lightblue">{{$item}},</p>
+                        @endforeach
+                    </div>
+                </div>
             </div>
             <div class="rightBottom">
                 <h3>Specs</h3>
-                <p>Series: {{$product['series']}}</p>
-                <p>U.S: Price: {{$product['price']}}</p>
-                <p>On Sale Date: {{$product['sale_date']}}</p>
+                <div class="series">
+                    <p>Series:</p>
+                    <p class="lightblue">{{$product['series']}}</p>
+                </div>
+                <div class="price">
+                    <p>U.S: Price:</p>
+                    <p>{{$product['price']}}</p>
+                </div>
+                <div class="date">
+                    <p>On Sale Date:</p>
+                    <p>{{$product['sale_date']}}</p>
+                </div>
             </div>
         </div>
     </main>

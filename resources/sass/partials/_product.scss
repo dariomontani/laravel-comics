@@ -1,0 +1,124 @@
+main {
+    .blueLine {
+        height: 100px;
+        width: 100%;
+        background-color: #0c7cec;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        margin: 4em 0;
+        .left {
+            width: 50%;
+            margin-right: 3em;
+            h2 {
+                text-transform: uppercase;
+                color: #074666;
+            }
+            .greenLine {
+                margin: 1.5em 0;
+                height: 50px;
+                background-color: #55ba59;
+                display: flex;
+                color: white;
+                .greenLeft {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 0.5em;
+                    border-right: 1px solid lightgray;
+                    width: 70%;
+                }
+                .greenRight {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30%;
+                }
+            }
+            .description {
+                line-height: 1.5em;
+            }
+        }
+        .right {
+        }
+    }
+    .bottomMain {
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: center;
+        padding: 4em 0;
+        .lightblue {
+            color: #378fe7;
+        }
+        .leftBottom {
+            width: 30%;
+            margin-right: 3em;
+            div {
+                padding: 1em 0;
+            }
+            h3 {
+                color: #074666;
+                padding-bottom: 2em;
+                border-bottom: 1px solid lightgray;
+            }
+            .artBy {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid lightgray;
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .first {
+                    width: 20%;
+                }
+                .second {
+                    width: 80%;
+                }
+            }
+            .written {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid lightgray;
+                div {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .first {
+                    width: 20%;
+                }
+                .second {
+                    width: 80%;
+                }
+            }
+        }
+        .rightBottom {
+            width: 30%;
+            margin-left: 3em;
+            div {
+                padding: 1em 0;
+            }
+            h3 {
+                color: #074666;
+                padding-bottom: 2em;
+                border-bottom: 1px solid lightgray;
+            }
+            .series {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid lightgray;
+            }
+            .price {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid lightgray;
+            }
+            .date {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid lightgray;
+            }
+        }
+    }
+}

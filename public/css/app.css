@@ -140,11 +140,15 @@ main .container-cards .card .box-image {
 main .container-cards .card .box-image img {
   width: 100%;
 }
-main .container-cards .card p {
+main .container-cards .card a {
+  text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-size: 0.7em;
   padding-top: 1.5em;
+}
+main .container-cards .card a:hover {
+  color: #0c7cec;
 }
 main .button-box {
   background-color: black;
@@ -156,4 +160,125 @@ main .button-box button {
   background-color: #0c7cec;
   color: white;
   padding: 1em 5em;
+}
+
+main .blueLine {
+  height: 100px;
+  width: 100%;
+  background-color: #0c7cec;
+}
+main .center {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0;
+}
+main .center .left {
+  width: 50%;
+  margin-right: 3em;
+}
+main .center .left h2 {
+  text-transform: uppercase;
+  color: #074666;
+}
+main .center .left .greenLine {
+  margin: 1.5em 0;
+  height: 50px;
+  background-color: #55ba59;
+  display: flex;
+  color: white;
+}
+main .center .left .greenLine .greenLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5em;
+  border-right: 1px solid lightgray;
+  width: 70%;
+}
+main .center .left .greenLine .greenRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+main .center .left .description {
+  line-height: 1.5em;
+}
+main .bottomMain {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  padding: 4em 0;
+}
+main .bottomMain .lightblue {
+  color: #378fe7;
+}
+main .bottomMain .leftBottom {
+  width: 30%;
+  margin-right: 3em;
+}
+main .bottomMain .leftBottom div {
+  padding: 1em 0;
+}
+main .bottomMain .leftBottom h3 {
+  color: #074666;
+  padding-bottom: 2em;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .leftBottom .artBy {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .leftBottom .artBy div {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .bottomMain .leftBottom .artBy .first {
+  width: 20%;
+}
+main .bottomMain .leftBottom .artBy .second {
+  width: 80%;
+}
+main .bottomMain .leftBottom .written {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .leftBottom .written div {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .bottomMain .leftBottom .written .first {
+  width: 20%;
+}
+main .bottomMain .leftBottom .written .second {
+  width: 80%;
+}
+main .bottomMain .rightBottom {
+  width: 30%;
+  margin-left: 3em;
+}
+main .bottomMain .rightBottom div {
+  padding: 1em 0;
+}
+main .bottomMain .rightBottom h3 {
+  color: #074666;
+  padding-bottom: 2em;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .rightBottom .series {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .rightBottom .price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+main .bottomMain .rightBottom .date {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
 }
