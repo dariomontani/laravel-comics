@@ -15,7 +15,7 @@
                 <div class="box-image">
                     <img src="{{ $comic['thumb'] }}" alt="">
                 </div>
-                <p>{{ $comic['title'] }}</p>
+                <a href="{{ route('product', $comic['id']) }}">{{ $comic['title'] }}</a>
             </div>
             @endforeach
         </div>

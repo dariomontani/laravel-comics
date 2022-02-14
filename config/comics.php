@@ -1,21 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-$comics = [
-        [
+return [
+    [
         "id" => "1",
         "title" => "Action Comics #1000: The Deluxe Edition",
         "description" => "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman’s new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
@@ -240,72 +226,3 @@ $comics = [
     ],
 ];
 
-    return view('guest.home', ['comics' => $comics]);
-})->name('home');
-
-
-Route::get('product/{id}', function ($id) {
-    $collection = collect(config('comics'));
-    $product = $collection->where('id', $id);
-    
-    // if ($product->count() === 0) {
-        //     abort(404);
-        // }
-
-    $singleProduct = '';
-    foreach ($product as $value) {
-        $singleProduct = $value;
-    }
-
-    return view('guest.product', [
-        'product' => $singleProduct,
-        'nomePagina' => $singleProduct['title'],
-        // @dd($singleProduct),
-    ]);
-})->name('product');
-
-
-
-Route::get('/characters', function () {
-    return view('guest.characters');
-})->name('characters');
-
-Route::get('/comics', function () {
-    return view('guest.comics');
-})->name('comics');
-
-Route::get('/movies', function () {
-    return view('guest.movies');
-})->name('movies');
-
-Route::get('/tv', function () {
-    return view('guest.tv');
-})->name('tv');
-
-Route::get('/games', function () {
-    return view('guest.games');
-})->name('games');
-
-Route::get('/collectibles', function () {
-    return view('guest.collectibles');
-})->name('collectibles');
-
-Route::get('/videos', function () {
-    return view('guest.videos');
-})->name('videos');
-
-Route::get('/fans', function () {
-    return view('guest.fans');
-})->name('fans');
-
-Route::get('/news', function () {
-    return view('guest.news');
-})->name('news');
-
-Route::get('/shop', function () {
-    return view('guest.shop');
-})->name('shop');
-
-Route::get('/footer', function () {
-    return view('guest.footerList');
-})->name('footerList');
